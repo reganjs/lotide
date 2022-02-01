@@ -19,9 +19,9 @@ const assertArrayEqual = (actual, expected) => {
 
 const without = (source, removeSource) => {
   let withoutArr = source;
-  for(let i = 0; i < source.length; i++) {
-    for(let y = 0; y < removeSource.length; y++) {
-      if(source[i] === removeSource[y]) {
+  for (let i = 0; i < source.length; i++) {
+    for (let y = 0; y < removeSource.length; y++) {
+      if (source[i] === removeSource[y]) {
         withoutArr.splice(i, 1);
       }
     }
