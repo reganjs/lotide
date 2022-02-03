@@ -9,6 +9,4 @@ const eqArrays = (arr1, arr2) => { //
   return true;
 };
 
-module.exports = eqArrays;
-
 //assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS

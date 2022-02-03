@@ -9,4 +9,3 @@ const assertArraysEqual = (actual, expected) => {
   }
 };
 
-module.exports = assertArraysEqual;
