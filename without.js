@@ -29,4 +29,10 @@ const without = (source, removeSource) => {
 }
 
 //console.log(assertArraysEqual(without([1, 2, 3], [1]) => [2, 3]
+<<<<<<< HEAD
 //console.log(assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]) => ["1", "2"]
+=======
+//console.log(assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]) => ["1", "2"]
+
+//needs to be refactored will come back to these test cases
+>>>>>>> aecb4d6e1291cd89155a129e4f754d2e83cf2736
