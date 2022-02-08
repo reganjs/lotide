@@ -1,4 +1,7 @@
 const eqArrays = (arr1, arr2) => {
+  if (arr1.length !== arr2.length) {
+    return false
+  }
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
@@ -28,10 +31,7 @@ if (arr3.length < 3) {
 }
 return arr4;
 
-/* assertArrayEqual(middle([1, 2, 3]), [2]);
-assertArrayEqual(middle([1, 2, 3, 4]), [2]);
-assertArrayEqual(middle([1, 2, 3, 4, 5]), [5]);
-assertArrayEqual(middle([1, 3]), [1]);
-assertArrayEqual(middle([1]), [1]);
-assertArrayEqual(middle([1]), []);
-assertArrayEqual(middle([1, 2, 3, 4, 5, 6]), [4, 5]); */
+assertArraysEqual(middle([1,2,3,4,5,6]),[3,4]
+);
+assertArraysEqual(middle([1,2,3,4,5,6,7]),[4]
+);
