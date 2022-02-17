@@ -18,17 +18,17 @@ const assertArraysEqual = (actual, expected) => {
 
 
 const flatten = (arr) => {
-    const flattenedArr = []
-    for (let item of arr) {
-        if (Array.isArray(item)) {
-            for (let subItem of item) {
-                flattenedArr.push(subItem)
-            }
-        } else {
-            flattenedArr.push(item)
-        }
+  const flattenedArr = []
+  for (let item of arr) {
+    if (Array.isArray(item)) {
+      for (let subItem of item) {
+        flattenedArr.push(subItem)
+      }
+    } else {
+      flattenedArr.push(item)
     }
-    return flattenedArr;
+  }
+  return flattenedArr;
 }
 
 console.log(flatten([1, 2, [3, 4], 5]))

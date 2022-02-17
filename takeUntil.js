@@ -10,19 +10,18 @@ const eqArrays = (arr1, arr2) => { //
 const assertArraysEqual = (actual, expected) => {
   if (eqArrays(actual, expected)) {
     console.log(` 👍🏻👍🏻👍🏻 Assertion Passed: , ${actual} === ${expected}`);
-  }
-  else {
+  } else {
     console.log(` 👎🏻👎🏻👎🏻 Assertion Failed: , ${actual} !== ${expected}`);
   }
 };
 
-const takeUntil = function(array, callback) {
+const takeUntil = function (array, callback) {
   let result = [];
   for (let element of array) {
     if (callback(element)) {
       break;
     } else {
-      result.push(element); 
+      result.push(element);
     }
   }
   return result;
@@ -31,7 +30,7 @@ const takeUntil = function(array, callback) {
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
 console.log(results1);
-assertArrayEqual(results1, [ 1, 2, 5, 7, 2 ]);
+assertArrayEqual(results1, [1, 2, 5, 7, 2]);
 
 console.log('---');
 

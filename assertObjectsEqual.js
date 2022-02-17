@@ -7,11 +7,11 @@ const eqArrays = (arr1, arr2) => { //
   return true;
 };
 
-const eqObjects = function(object1, object2) {
+const eqObjects = function (object1, object2) {
   const keyOneList = Object.keys(object1);
   const keyTwoList = Object.keys(object2);
 
-  if(keyOneList.length !== keyTwoList.length) {
+  if (keyOneList.length !== keyTwoList.length) {
     return false;
   }
   for (const key of keyOneList) {
@@ -19,23 +19,20 @@ const eqObjects = function(object1, object2) {
     let keyTwoValue = object2[key]
     if (Array.isArray(keyOneValue) && Array.isArray(keyTwoValue)) {
       return eqArrays(keyOneValue, keyTwoValue);
-    }
-    else if (keyOneValue !== keyTwoValue) {
+    } else if (keyOneValue !== keyTwoValue) {
       return false;
     }
   }
   return true;
 };
 
-const assertObjectsEqual = function(actual, expected) {
+const assertObjectsEqual = function (actual, expected) {
   const inspect = require('util').inspect;
 
   if (eqObjects(actual, expected)) {
-    return console.log(` 👍🏻👍🏻👍🏻 Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`
-    );
+    return console.log(` 👍🏻👍🏻👍🏻 Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   } else {
-    return console.log(` 👎🏻👎🏻👎🏻 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`
-    )
+    return console.log(` 👎🏻👎🏻👎🏻 Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`)
   }
 };
 

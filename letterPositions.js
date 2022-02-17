@@ -10,21 +10,19 @@ const eqArrays = (arr1, arr2) => { //
 const assertArraysEqual = (actual, expected) => {
   if (eqArrays(actual, expected)) {
     console.log(` 👍🏻👍🏻👍🏻 Assertion Passed: , ${actual} === ${expected}`);
-  }
-  else {
+  } else {
     console.log(` 👎🏻👎🏻👎🏻 Assertion Failed: , ${actual} !== ${expected}`);
   }
 };
 
-const letterPositions = function(sentence) {
+const letterPositions = function (sentence) {
   const results = {};
-  for (let i = 0; i < sentence.length; i ++) {
+  for (let i = 0; i < sentence.length; i++) {
     let letter = sentence[i]
     if (letter !== " ") {
       if (results[letter]) {
         results[letter].push(i)
-      }
-      else {
+      } else {
         results[letter] = [i]
       }
     }

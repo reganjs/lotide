@@ -10,8 +10,7 @@ const eqArrays = (arr1, arr2) => { //
 const assertArraysEqual = (actual, expected) => {
   if (eqArrays(actual, expected)) {
     console.log(` 👍🏻👍🏻👍🏻 Assertion Passed: , ${actual} === ${expected}`);
-  }
-  else {
+  } else {
     console.log(` 👎🏻👎🏻👎🏻 Assertion Failed: , ${actual} !== ${expected}`);
   }
 };
@@ -31,4 +30,3 @@ console.log(results1);
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't'])
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'j', 't'])
 assertArraysEqual(map(words, word => word[1]), ['g', 'c', 'l', 'o', 't'])
-
