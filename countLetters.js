@@ -18,7 +18,9 @@ const countLetters = (sentence) => {
     }
   }
   return result;
-}
+};
 
 const testSentence = "This is a test sentence."
 console.log(countLetters(testSentence))
+
+module.exports = countLetters;
