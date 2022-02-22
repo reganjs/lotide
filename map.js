@@ -21,8 +21,9 @@ const map = (array, callback) => {
     results.push(callback(item));
   }
   return results;
-}
+};
 
+/*
 const words = ["ground", "control", "to", "major", "tom"];
 const results1 = map(words, word => word[0]);
 console.log(results1);
@@ -30,3 +31,6 @@ console.log(results1);
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'm', 't'])
 assertArraysEqual(map(words, word => word[0]), ['g', 'c', 't', 'j', 't'])
 assertArraysEqual(map(words, word => word[1]), ['g', 'c', 'l', 'o', 't'])
+*/
+
+module.exports = map;
