@@ -6,11 +6,11 @@ describe("head - Returns the first element of an array", () => {
     assert.strictEqual(head([1, 2, 3]), 1);
   });
 
-  it("returns '5' for ['5']", () => {
+  it("returns '5' for [5]", () => {
     assert.strictEqual(head(["5"]), "5");
   });
 
-  it("returns '5' for [5, 6,7]", () => {
+  it("returns '5' for [5, 6, 7]", () => {
     assert.strictEqual(head([5, 6, 7]), 5);
   });
 
