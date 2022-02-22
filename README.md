@@ -26,10 +26,10 @@ This project was created and published by [me](https://github.com/reganjs) as pa
 
 The following functions are currently implemented:
 
-* `assertArraysEqual` : Compares two arrays.
-* `assertEqual` : Compares two primitives.
-* `assertObjectsEqual` : Compares two flat objects.
-* `countLetters` : Returns an object, counts the times a letter appears in a string.
+* `assertArraysEqual` : Compares two arrays. Logs "👍🏻👍🏻👍🏻 Assertion Passed" or "👎🏻👎🏻👎🏻 Assertion Failed".
+* `assertEqual` : Compares two primitives. Logs "👍🏻👍🏻👍🏻 Assertion Passed" or "👎🏻👎🏻👎🏻 Assertion Failed".
+* `assertObjectsEqual` : Compares two flat objects. Logs "👍🏻👍🏻👍🏻 Assertion Passed" or "👎🏻👎🏻👎🏻 Assertion Failed".
+* `countLetters` : Returns an object, counts the times a letter appears in a string. Will return the count of a specific character. 
 * `countOnly` : Returns an object of the count of instances of the item in itemsToCount in allItems. 
 * `eqObjects` : Compares two flat objects. Returns true if they are identical.
 * `findKey` : Takes an object and searches it for the first key that satisfies a callback function and returns that key. 
@@ -41,4 +41,4 @@ The following functions are currently implemented:
 * `middle` : Returns the middle value from a given array as a separate array.
 * `tail` : Returns the tail of the array (all but the first item in an array).
 * `takeUntil` : Returns an array of values until the callback function has been met.
-* `without` : Returns an array that contains all the elements from an array, but with those contained in another array removed.
+* `without` : Returns an array that contains all the elements from an array, but with those contained in another array removed. 
